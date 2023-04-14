@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "content": "Hello World!",
+        "author": "dike",
+        "timestamp": "1681404790452",
+        "likes": 0
+    },
+    {
+        "id": 2,
+        "content": "Hello React!",
+        "author": "dikeOkayama",
+        "timestamp": "1681204790452",
+        "likes": 10
+    },
+    {
+        "id": 3,
+        "content": "as soon as possible",
+        "author": "lorraine shakespeare",
+        "timestamp": "1681204790452",
+        "likes": 3
+    },
+    {
+        "id": 4,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    },
+    {
+        "id": 5,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    },
+    {
+        "id": 6,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    },
+    {
+        "id": 7,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    },
+    {
+        "id": 8,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    },
+    {
+        "id": 9,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    },
+    {
+        "id": 10,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    },
+    {
+        "id": 11,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    },
+    {
+        "id": 12,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    },
+    {
+        "id": 13,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    },
+    {
+        "id": 14,
+        "content": "Have a good day!",
+        "author": "unknown",
+        "timestamp": "1681402190452",
+        "likes": 20
+    }
+]

@@ -1,0 +1,111 @@
+:root {
+    --line-color: rgb(227, 227, 227);
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "メイリオ", "Meiryo", "Hiragino Kaku Gothic ProN",
+        "ヒラギノ角ゴ ProN W3", sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* start of Home Component */
+.home {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid var(--line-color);
+    border-right: 1px solid var(--line-color);
+}
+
+.home-tab {
+    display: flex;
+    border-bottom: solid 1px var(--line-color);
+}
+
+.home-tab-element {
+    color: rgb(140, 136, 136);
+    font-size: small;
+    font-weight: 800;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.home-active-tab {
+    color: black;
+    text-decoration: underline 2px;
+    text-underline-offset: 1.3rem;
+}
+/* end of Home Component */
+
+/* start of Post Component */
+
+.post {
+    padding: 10px 1rem 10px 1rem;
+    border-bottom: 1px solid var(--line-color);
+    font-size: 1rem;
+    display: flex;
+}
+
+.user-icon {
+    height: 40px;
+    border-radius: 20px;
+}
+
+.user-name {
+    margin-left: 1rem;
+    font-size: small;
+    font-weight: bold;
+}
+.text-body {
+    margin-left: 1rem;
+    font-size: small;
+}
+
+/* end of Post Component */
+
+/* start of InputForm Component */
+
+.input {
+    padding: 20px 1rem 10px 1rem;
+    border-bottom: 1px solid var(--line-color);
+    display: flex;
+}
+
+.input-form {
+    width: calc(100% - 1rem);
+    text-align: right;
+}
+
+.input-textarea {
+    width: calc(100% - 1rem);
+    font-size: large;
+    margin-left: 1rem;
+    background-color: whitesmoke;
+    padding-bottom: 3%;
+    border: none;
+    resize: none;
+    border-bottom: solid var(--line-color) 1px;
+}
+
+.input-textarea:focus {
+    outline: none;
+}
+
+.input-button {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    padding: 9px 18px 9px 18px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(160, 181, 195);
+}
+
+/* end of InputForm Component */
