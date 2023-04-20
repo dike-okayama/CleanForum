@@ -1,4 +1,5 @@
 import React from "react";
+// import LikeButton from "./LikeButton";
 
 const diff = (past) => new Date().getTime() - past;
 const calc = (diff) => {
@@ -63,6 +64,13 @@ export default function PostCard(post) {
                             <br />
                         </React.Fragment>
                     ))}
+                    {/* <div
+                        style={{
+                            marginTop: ".8rem",
+                        }}
+                    >
+                        <LikeButton />
+                    </div> */}
                 </div>
             </div>
         </div>

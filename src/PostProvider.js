@@ -11,7 +11,7 @@ export default function PostProvider({ children }) {
 
     useEffect(() => {
         setPosts(thread);
-    }, [thread]); // TODO: useEffectの第2引数をチェック
+    }, [thread]);
     const addPost = (content) =>
         setPosts([
             {

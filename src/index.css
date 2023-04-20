@@ -7,3 +7,7 @@ body {
 textarea:focus {
     outline: none;
 }
+
+.like-button:hover {
+    transform: scale(1.1);
+}
