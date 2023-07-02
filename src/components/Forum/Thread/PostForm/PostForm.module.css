@@ -37,6 +37,10 @@
   border-radius: 20px;
 }
 
+.button:focus {
+  outline: rgb(80, 80, 80) solid 1.5px;
+}
+
 .buttonFilled {
-  background-color: rgb(0, 119, 255);
+  background-color: grey;
 }

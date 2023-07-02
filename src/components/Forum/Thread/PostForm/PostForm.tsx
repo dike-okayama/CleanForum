@@ -1,4 +1,4 @@
-import { useState, SyntheticEvent } from "react";
+import { useState, useRef, SyntheticEvent } from "react";
 import clsx from "clsx";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./PostForm.module.css";
@@ -10,8 +10,10 @@ interface PostFormProps {
 
 export default function PostForm({ handleAddPost }: PostFormProps) {
   const [textareaValue, setTextareaValue] = useState("");
+  const textareaRef = useRef(null);
 
   const submit = (e: SyntheticEvent) => {
+    if (textareaValue === "") return;
     e.preventDefault();
     setTextareaValue("");
     handleAddPost({
@@ -21,6 +23,7 @@ export default function PostForm({ handleAddPost }: PostFormProps) {
       timestamp: Date.now().toString(),
       likes: 10,
     });
+    (textareaRef.current as any).focus();
   };
 
   return (
@@ -28,6 +31,7 @@ export default function PostForm({ handleAddPost }: PostFormProps) {
       <img src="/user.png" alt="user-icon" className={styles.img}></img>
       <form onSubmit={submit} className={styles.form}>
         <textarea
+          ref={textareaRef}
           value={textareaValue}
           onChange={(e) => setTextareaValue(e.target.value)}
           placeholder="What's happening?"
