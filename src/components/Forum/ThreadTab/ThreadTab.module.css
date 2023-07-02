@@ -1,0 +1,21 @@
+.threadTabContainer {
+  display: flex;
+  border-bottom: solid 1px rgb(227, 227, 227);
+  padding-top: 2rem;
+}
+
+.threadTab {
+  color: rgb(140, 136, 136);
+  font-size: small;
+  font-weight: 800;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.isActive {
+  color: black;
+  text-decoration: underline 2px;
+  text-underline-offset: 1rem;
+}
