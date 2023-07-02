@@ -4,6 +4,8 @@ import { v4 as uuidv4 } from "uuid";
 import styles from "./PostForm.module.css";
 import { Post } from "../../types";
 
+import sanitizePost from "../../../../services/sanitizePost";
+
 interface PostFormProps {
   handleAddPost: (post: Post) => void;
 }
@@ -15,7 +17,7 @@ export default function PostForm({ handleAddPost }: PostFormProps) {
   const submit = (e: SyntheticEvent) => {
     if (textareaValue === "") return;
     e.preventDefault();
-    setTextareaValue("");
+    sanitizePost(textareaValue).then(console.log);
     handleAddPost({
       id: uuidv4(),
       content: textareaValue,
@@ -23,6 +25,7 @@ export default function PostForm({ handleAddPost }: PostFormProps) {
       timestamp: Date.now().toString(),
       likes: 10,
     });
+    setTextareaValue("");
     (textareaRef.current as any).focus();
   };
 

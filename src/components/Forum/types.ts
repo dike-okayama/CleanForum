@@ -10,3 +10,10 @@ export interface Post {
   timestamp: string;
   likes: number;
 }
+
+interface Prediction {
+  label: string;
+  results: Array<{ probabilities: Float32Array; match: boolean }>;
+}
+
+export type Predictions = Prediction[];

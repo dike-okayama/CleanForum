@@ -1,0 +1,37 @@
+.postCardInfoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.animationContainer {
+  margin: 10px;
+}
+
+.label {
+  margin-left: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.probabilityContainer {
+  display: flex;
+}
+
+.animationBarContainer {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.animationBar {
+  height: 20px;
+}
+
+.percent {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 5px;
+  width: 20px;
+}

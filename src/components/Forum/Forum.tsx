@@ -7,28 +7,29 @@ const initialPostData: Record<Threads, Post[]> = {
   Global: [
     {
       id: "cd308fd9-03a3-4a29-8ddf-117a3e3b8dfe",
-      content: "Hello World!",
+      content: "Hi there! What a lovely forum!",
       author: "Global User 1",
       timestamp: new Date().getTime().toString(),
       likes: 0,
     },
     {
       id: "78a90c32-704d-49f9-b581-517d406c1cfe",
-      content: "Hello React!",
+      content: "She looks like a cavewoman, only far less intelligent!",
       author: "Global User 2",
       timestamp: new Date(Date.now() - 30 * 1000).getTime().toString(),
       likes: 10,
     },
     {
       id: "34f8992f-68d8-4509-a5cd-ba1f68bc65dd",
-      content: "Hello TypeScript!",
+      content:
+        "A teacher asked her students to use the word 'beans' in a sentence. 'My father grows beans,' said one girl. 'My mother cooks beans,' said a boy. A third student spoke up, 'We are all human beans.'",
       author: "Global User 3",
       timestamp: new Date(Date.now() - 5 * 60 * 1000).getTime().toString(),
       likes: 3,
     },
     {
       id: "73868301-69cb-465b-b346-fbc63243d19a",
-      content: "Have a good day!",
+      content: "The coronavirus pandemic has turned our life upside-down.",
       author: "Global User 4",
       timestamp: new Date(Date.now() - 2 * 60 * 60 * 1000).getTime().toString(),
       likes: 20,
